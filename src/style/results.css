@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.results-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.results-container main{
+    width: 500px;
+    height: 400px;
+    text-align: center;
+}
+.results-container main p{
+    font-size: 2rem;
+    color: #FFF;
+}
