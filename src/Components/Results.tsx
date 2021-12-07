@@ -1,4 +1,4 @@
-import { parse } from "path"
+import { useHistory } from "react-router-dom"
 import { useEffect, useState } from "react"
 import '../style/results.css'
 
@@ -14,6 +14,7 @@ const defaultState = {
 
 const Results = () => {
     const [results, setResults] = useState(defaultState)
+    let history = useHistory()
 
     useEffect(() => {
         const timer = JSON.parse(localStorage.getItem("timer")!)
@@ -36,6 +37,7 @@ const Results = () => {
                 <br />
                 <p className="quote">You typed {results.sentence.author}'s quote</p>
                 <p style={{fontSize: "1.2rem"}}>{results.sentence.text}</p>
+                <button style={{transform: "translateY(20px)"}} onClick={() => history.push("/playground")}>Play Again</button>
             </main>
         </div>
     )

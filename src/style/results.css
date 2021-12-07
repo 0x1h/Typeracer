@@ -21,3 +21,16 @@
     font-size: 2rem;
     color: #FFF;
 }
+
+button{
+    width: 200px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    background: #9D2933;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    color: #FFF;
+}
